@@ -39,6 +39,34 @@ const TestComponent = ({ changingProp }) => {
 }
 ```
 
+### With Options
+
+```js
+import { useEffect } from 'react'
+import useDepedencyAlert from 'use-dependency-alert'
+
+const TestComponent = ({ changingProp }) => {
+  useEffect(() => {
+    // This should not be changing often, but useDependencyAlert will let us know if that’s the case
+  }, useDependencyAlert(
+    [changingProp],
+    {
+      context: 'TestComponent',
+      dependencyKeys: ['changingProps'],
+      logDelay: 5000,
+    },
+  ))
+
+  return <div>{changingProp}</div>
+}
+```
+
+#### Options
+
+* `context: string` - Basic string for making alerts unique to help differentiate from others.
+* `dependencyKeys: string[]` - Array of names to apply to depedency indexes in the array. Intended to streamline debugging.
+* `logDelay: number` - Milliseconds used to delay the logging of depedency updates to help keep the noise down in the `console`.
+
 ## License
 
 [MIT](LICENSE) © [Ryan Hefner](https://www.ryanhefner.com)
