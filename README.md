@@ -1,24 +1,44 @@
-# \[your package name\]
+# use-dependency-alert
 
-\[package description\]
+[![npm](https://img.shields.io/npm/v/use-dependency-alerrt?style=flat-square)](https://www.pkgstats.com/pkg:use-dependency-alerrt)
+[![NPM](https://img.shields.io/npm/l/use-dependency-alerrt?style=flat-square)](LICENSE)
+[![npm](https://img.shields.io/npm/dt/use-dependency-alerrt?style=flat-square)](https://www.pkgstats.com/pkg:use-dependency-alerrt)
+[![Coveralls github](https://img.shields.io/coveralls/github/ryanhefner/use-dependency-alerrt?style=flat-square)](https://coveralls.io/github/ryanhefner/use-dependency-alerrt)
+[![codecov](https://codecov.io/gh/ryanhefner/use-dependency-alerrt/branch/main/graph/badge.svg)](https://codecov.io/gh/ryanhefner/use-dependency-alerrt)
+[![CircleCI](https://img.shields.io/circleci/build/github/ryanhefner/use-dependency-alerrt?style=flat-square)](https://circleci.com/gh/ryanhefner/use-dependency-alerrt)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/ryanhefner/use-dependency-alerrt?style=flat-square)
+
+React hook for debugging hook dependency arrays to validate what is changing, and how often. Not intended to be included in the final `production` build, but handy to use while debugging and confirming hooks are being triggered/rerendered when expected.
 
 ## Install
 
-Via [npm](https://npmjs.com/package/\[your-package-name\])
+Via [npm](https://npmjs.com/package/use-dependency-alert)
 
 ```sh
-npm install [your package name]
+npm install use-dependency-alert
 ```
 
-Via [Yarn](https://yarn.pm/\[your-package-name\])
+Via [Yarn](https://yarn.pm/use-dependency-alert)
 
 ```sh
-yarn add [your package name]
+yarn add use-dependency-alert
 ```
 
 ## How to use
 
+```js
+import { useEffect } from 'react'
+import useDepedencyAlert from 'use-dependency-alert'
+
+const TestComponent = ({ changingProp }) => {
+  useEffect(() => {
+    // This should not be changing often, but useDependencyAlert will let us know if that’s the case
+  }, useDependencyAlert([changingProp]))
+
+  return <div>{changingProp}</div>
+}
+```
 
 ## License
 
-[MIT](LICENSE) © \[your copyright info\]
+[MIT](LICENSE) © [Ryan Hefner](https://www.ryanhefner.com)
