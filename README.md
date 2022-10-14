@@ -1,4 +1,4 @@
-# use-dependency-alert
+# 🚨 use-dependency-alert
 
 [![npm](https://img.shields.io/npm/v/use-dependency-alert?style=flat-square)](https://www.pkgstats.com/pkg:use-dependency-alert)
 [![NPM](https://img.shields.io/npm/l/use-dependency-alert?style=flat-square)](LICENSE)
