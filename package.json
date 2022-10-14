@@ -8,7 +8,6 @@
   },
   "author": "Ryan Hefner <hi@ryanhefner.com> (https://www.ryanhefner.com)",
   "license": "MIT",
-  "type": "module",
   "files": [
     "es",
     "src",
@@ -26,10 +25,10 @@
   "scripts": {
     "clean": "rimraf index.js es types umd",
     "prebuild": "npm run clean",
-    "build": "node ./tools/build.js && yarn types",
+    "build": "node ./tools/build.mjs && yarn types",
     "watch": "babel ./src -d . --ignore __mocks__,__tests__,**/*.test.js --watch",
     "prepare": "npm run build",
-    "prepublishOnly": "node ./tools/build.js",
+    "prepublishOnly": "node ./tools/build.mjs",
     "prettier": "prettier -c",
     "push-release": "git push origin master && git push --tags",
     "dtslint": "dtslint types",
