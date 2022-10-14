@@ -1,12 +1,12 @@
 # use-dependency-alert
 
-[![npm](https://img.shields.io/npm/v/use-dependency-alerrt?style=flat-square)](https://www.pkgstats.com/pkg:use-dependency-alerrt)
-[![NPM](https://img.shields.io/npm/l/use-dependency-alerrt?style=flat-square)](LICENSE)
-[![npm](https://img.shields.io/npm/dt/use-dependency-alerrt?style=flat-square)](https://www.pkgstats.com/pkg:use-dependency-alerrt)
-[![Coveralls github](https://img.shields.io/coveralls/github/ryanhefner/use-dependency-alerrt?style=flat-square)](https://coveralls.io/github/ryanhefner/use-dependency-alerrt)
-[![codecov](https://codecov.io/gh/ryanhefner/use-dependency-alerrt/branch/main/graph/badge.svg)](https://codecov.io/gh/ryanhefner/use-dependency-alerrt)
-[![CircleCI](https://img.shields.io/circleci/build/github/ryanhefner/use-dependency-alerrt?style=flat-square)](https://circleci.com/gh/ryanhefner/use-dependency-alerrt)
-![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/ryanhefner/use-dependency-alerrt?style=flat-square)
+[![npm](https://img.shields.io/npm/v/use-dependency-alert?style=flat-square)](https://www.pkgstats.com/pkg:use-dependency-alert)
+[![NPM](https://img.shields.io/npm/l/use-dependency-alert?style=flat-square)](LICENSE)
+[![npm](https://img.shields.io/npm/dt/use-dependency-alert?style=flat-square)](https://www.pkgstats.com/pkg:use-dependency-alert)
+[![Coveralls github](https://img.shields.io/coveralls/github/ryanhefner/use-dependency-alert?style=flat-square)](https://coveralls.io/github/ryanhefner/use-dependency-alert)
+[![codecov](https://codecov.io/gh/ryanhefner/use-dependency-alert/branch/main/graph/badge.svg)](https://codecov.io/gh/ryanhefner/use-dependency-alert)
+[![CircleCI](https://img.shields.io/circleci/build/github/ryanhefner/use-dependency-alert?style=flat-square)](https://circleci.com/gh/ryanhefner/use-dependency-alert)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/ryanhefner/use-dependency-alert?style=flat-square)
 
 React hook for debugging hook dependency arrays to validate what is changing, and how often. Not intended to be included in the final `production` build, but handy to use while debugging and confirming hooks are being triggered/rerendered when expected.
 
